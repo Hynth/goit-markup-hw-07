@@ -8,7 +8,7 @@
     />
 
     <!-- Owner's Styles  -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <!-- Font's Styles  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,62 +24,60 @@
     <title>Portafolio</title>
   </head>
   <body>
-    <header class="header-border-portfolio">
-      <div class="header-block container-head container">
-        <nav class="container-nav">
-          <a class="header-title" href="#">WebStudio</a>
-          <ul class="list container-list-nav">
-            <li>
-              <a class="header-navigation link" href="./index.html">Estudio</a>
+    <header class="border">
+      <div class="header container">
+        <nav class="nav">
+          <a class="title" href="#">WebStudio</a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link" href="./index.html">Estudio</a>
             </li>
-            <li>
-              <a class="header-navigation page link" href="./portfolio.html"
-                >Portafolio</a
-              >
+            <li class="nav__item">
+              <a class="page link" href="./portfolio.html">Portafolio</a>
             </li>
-            <li>
-              <a class="header-navigation link" href="#">Contactos</a>
+            <li class="nav__item">
+              <a class="link" href="#">Contactos</a>
             </li>
           </ul>
         </nav>
-        <ul class="list container-contact">
-          <li class="header-list-contact">
-            <svg class="icon icon-header-contact pointer">
+        <ul class="list contact">
+          <li class="contact__item">
+            <svg class="icon contact__icon pointer">
               <use xlink:href="./images/icons.svg#icon-sobre"></use>
             </svg>
-            <a class="header-contact" href="mailto:info@devstudio.com"
+            <a class="contact__info" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-list-contact">
-            <svg class="icon icon-header-contact pointer">
+          <li class="contact__item">
+            <svg class="icon contact__icon pointer">
               <use xlink:href="./images/icons.svg#icon-smarthpone"></use>
             </svg>
-            <a class="header-contact" href="tel:+525555296000"
+            <a class="contact__info" href="tel:+525555296000"
               >+52 55 5529 6000</a
             >
           </li>
         </ul>
       </div>
     </header>
-    <main class="container main-portfolio">
-      <nav class="nav-main-portfolio">
-        <button class="button-portfolio pointer" type="button">Todo</button>
-        <button class="button-portfolio pointer" type="button">
+    <main class="container container--margin">
+      <nav class="nvportfolio">
+        <button class="nvportfolio__btn pointer" type="button">Todo</button>
+        <button class="nvportfolio__btn pointer" type="button">
           Sitios-Web
         </button>
-        <button class="button-portfolio pointer" type="button">
+        <button class="nvportfolio__btn pointer" type="button">
           Aplicaciones
         </button>
-        <button class="button-portfolio pointer" type="button">Diseño</button>
-        <button class="button-portfolio pointer" type="button">
+        <button class="nvportfolio__btn pointer" type="button">Diseño</button>
+        <button class="nvportfolio__btn pointer" type="button">
           Marketing
         </button>
       </nav>
 
-      <ul class="list container-main-portfolio">
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+      <ul class="list cards">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/tecnoduck.jpg" alt="Tecnoduck" width="370" />
             <div class="overlay-portfolio">
               <p class="overlay-desc-portfolio">
@@ -90,21 +88,21 @@
               </p>
             </div>
           </div>
-          <h3 class="main-name-service">Tecnoduck</h3>
-          <p class="main-desc-service">Sitio-web</p>
+          <h3 class="cards__name">Tecnoduck</h3>
+          <p class="cards__desc">Sitio-web</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/nba_players.jpg" alt="Poster NBA" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">
+          <h3 class="cards__name">
             Póster de Nueva Orleans vs Estrella Dorada
           </h3>
-          <p class="main-desc-service">Diseño</p>
+          <p class="cards__desc">Diseño</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img
               src="./images/restaurant_seafood.jpg"
               alt="Restaurante SeaFood"
@@ -112,51 +110,51 @@
             />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Restaurante SeaFood</h3>
-          <p class="main-desc-service">Aplicaciones</p>
+          <h3 class="cards__name">Restaurante SeaFood</h3>
+          <p class="cards__desc">Aplicaciones</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/headphone.jpg" alt="Headphone" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Proyecto Prime</h3>
-          <p class="main-desc-service">Marketing</p>
+          <h3 class="cards__name">Proyecto Prime</h3>
+          <p class="cards__desc">Marketing</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/two_boxes.jpg" alt="Dos cajas" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Proyecto Cajas</h3>
-          <p class="main-desc-service">Aplicaciones</p>
+          <h3 class="cards__name">Proyecto Cajas</h3>
+          <p class="cards__desc">Aplicaciones</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/monitor.jpg" alt="Monitor" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">La inspiración no tiene límites</h3>
-          <p class="main-desc-service">Sitio-web</p>
+          <h3 class="cards__name">La inspiración no tiene límites</h3>
+          <p class="cards__desc">Sitio-web</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/magazine.jpg" alt="Revista" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Edición Limitada</h3>
-          <p class="main-desc-service">Diseño</p>
+          <h3 class="cards__name">Edición Limitada</h3>
+          <p class="cards__desc">Diseño</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img src="./images/label.jpg" alt="Etiqueta Lab" width="370" />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Proyecto LAB</h3>
-          <p class="main-desc-service">Marketing</p>
+          <h3 class="cards__name">Proyecto LAB</h3>
+          <p class="cards__desc">Marketing</p>
         </li>
-        <li class="pointer main-list-portfolio">
-          <div class="box-overlay-portfolio">
+        <li class="pointer cards__item">
+          <div class="cards__overlay">
             <img
               src="./images/typing_computer.jpg"
               alt="Portatil"
@@ -164,20 +162,20 @@
             />
             <div class="overlay-portfolio"></div>
           </div>
-          <h3 class="main-name-service">Negocio en Crecimiento</h3>
-          <p class="main-desc-service">Aplicaciones</p>
+          <h3 class="cards__name">Negocio en Crecimiento</h3>
+          <p class="cards__desc">Aplicaciones</p>
         </li>
       </ul>
     </main>
-    <footer class="footer-background">
-      <section class="container footer-style">
-        <section class="footer-element">
-          <a class="header-title" href="./index.html">WebStudio</a>
-          <address class="footer-address">
+    <footer class="footer">
+      <section class="container footer--display">
+        <section class="footer__contact">
+          <a class="title" href="./index.html">WebStudio</a>
+          <address class="footer__address">
             <ul class="list">
               <li>
                 <a
-                  class="text-main-block color-text-white footer-text-behavior"
+                  class="footer__text footer__text--white"
                   href="https://goo.gl/maps/GB3hHYx3USkWvwVn7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -186,14 +184,14 @@
               </li>
               <li>
                 <a
-                  class="text-main-block color-text-gray footer-text-behavior"
+                  class="footer__text footer__text--gray"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
                 <a
-                  class="text-main-block color-text-gray footer-text-behavior"
+                  class="footer__text footer__text--gray"
                   href="tel:+525555296000"
                   >+52 55 5529 6000</a
                 >
@@ -201,50 +199,50 @@
             </ul>
           </address>
         </section>
-        <section class="footer-element">
-          <p class="text-footer2">ENCUENTRENOS EN</p>
-          <section class="main-bottom-span">
-            <div class="icon-footer">
-              <svg class="icon icon-style-contacts">
+        <section class="footer__socialnet">
+          <p class="footer__info">ENCUENTRENOS EN</p>
+          <section class="socialnet">
+            <div class="footer__icon">
+              <svg class="icon icon--socialnet-size">
                 <use xlink:href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon icon-style-contacts">
+            <div class="footer__icon">
+              <svg class="icon icon--socialnet-size">
                 <use xlink:href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </div>
 
-            <div class="icon-footer">
-              <svg class="icon icon-style-contacts">
+            <div class="footer__icon">
+              <svg class="icon icon--socialnet-size">
                 <use xlink:href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </div>
 
-            <div class="icon-footer">
-              <svg class="icon icon-style-contacts">
+            <div class="footer__icon">
+              <svg class="icon icon--socialnet-size">
                 <use xlink:href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </div>
           </section>
         </section>
-        <section class="footer-element">
-          <form class="footer-form" name="subscription" autocomplete="on">
-            <label for="email" class="text-footer2"
+        <section class="footer__subscription">
+          <form class="footer__form" name="subscription" autocomplete="on">
+            <label for="email" class="footer__info"
               >SUSCRÍBASE AL BOLETÍN INFORMATIVO</label
             >
-            <div class="footer-form-email">
+            <div class="footer__email">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Correo electrónico"
-                class="footer-input"
+                class="footer__input"
                 required
               />
-              <button type="submit" class="footer-form-submit pointer">
+              <button type="submit" class="footer__submit pointer">
                 Suscríbase
-                <svg class="icon icon-footer-enviar">
+                <svg class="icon icon--btn-size">
                   <use xlink:href="./images/icons.svg#icon-enviar"></use>
                 </svg>
               </button>
